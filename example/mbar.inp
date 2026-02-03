@@ -1,0 +1,16 @@
+[INPUT]
+cvfile         = output/parameter_energy/{}.ene # parameter energy file
+targetfile     = output/target_energy/{}.ene    # target energy file
+ 
+[OUTPUT]
+fenefile   = result/fes/output.fene      # free energy file
+weightfile = result/fes/output{}.weight  # weight file
+ 
+[MBAR]
+nreplica           = 288
+input_type         = EneAll
+dimension          = 1
+nblocks            = 1
+self_iteration     = 10
+temperature        = 310
+target_temperature = 310

@@ -1,0 +1,14 @@
+[INPUT]
+cvfile       = input/dist/{}.comdis
+weightfile   = result/fes/output{}.weight
+
+[OUTPUT]
+pmffile      = result/pmf/dist.pmf
+
+[OPTION]
+nreplica     = 288             # number of replicas
+dimension    = 1             # dimension of cv space
+temperature  = 310.0
+grids1       = 5.3 30.0 101      # (min max num_of_bins)
+band_width1  = 0.1
+is_periodic1 = NO            # periodicity of cv1
